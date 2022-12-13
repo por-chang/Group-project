@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Random Meal Generator</title>
+</head>
+
+<body>
+      <div class="h-200 bg-gradient-to-r from-cyan-200 to-blue-600">
+        <header class="text-6xl font-bold text-center font-sans">
+          Random Meal Finder
+        </header>
+      <div class="flex justify-items-center">
+        <div id="image-gif" style="width: 50vw" >
+          <div class="py-5 rounded-lg">
+            <img src ="./src/app/assets/images/Foodie.gif">
+          </div>
+        </div>
+        <div id="image-gif" style="width: 50vw">
+          <div class="py-5 rounded-lg">
+            <img src ="./src/app/assets/images/Gif2.gif">
+          </div>
+        </div>
+        <div id="image-gif" style="width: 50vw" >
+          <div class="py-5 rounded-lg">
+            <img src ="./src/app/assets/images/Foodyummy.gif">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="grid grid-col-4 grid-flow-col gap-4  ml-25 bg-gradient-to-r from-yellow-500 via-blue-500 to-purple-500 to-pink-500">
+        <div class="row-span-1 md:container md:mx-auto font-bold py-4 px-4 rounded">
+          <div class="card-header text-center ">
+            <form>
+              <label for="mealId">Search for Meal: </label>
+              <input type="text" id="search-field" class="border border-indigo-500/50 bg-grey"><br><br>
+            <br><br>
+              <input type="submit" id="search-btn" value=" Search" class="bg-blue-500/50 hover:bg-blue-700/50 text-white font-bold py-2 px-4 rounded" >
+            </form>
+            <br>
+            <button class="bg-blue-500/50 hover:bg-blue-700/50 text-white font-bold py-2 px-4 rounded" id="search-history">Search History</button>
+            <ul id="thelist"></ul>
+            <br>
+            <button class="bg-blue-500/50 hover:bg-blue-700/50 text-white font-bold py-2 px-4 rounded" id="clear-history">Clear History</button>
+            <br>
+            <br>
+            <button type="button" id="randon-meal" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-green-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">CLICK here to have the UNIVERSE chose a recipe for you! </button>
+          </div>
+        </div>
+        <!-- card for random fact -->
+        <div class="col-span-1 md:container md:mx-auto">
+            <div>
+              <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                <div class="px-6 py-4" id="child">
+                  <div id="search-heading" class="font-bold text-xl mb-2">Random Fact</div>
+                  <img id="poke-img" />
+                  <p class="text-gray-700 text-base" id="display-fact">
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div> 
+        <!-- card for meal instructions -->
+        <div class="col-span-1 md:container md:mx-auto">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2" id="meal-heading">Meal Instructions</div>
+              <p class="text-gray-700 text-base" id="meal-inst">
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card for meal images -->
+        <div class="row-span-1 md:container md:mx-auto">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2" id="meal-look">How my meal looks?</div>
+              <div id="meal-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>   
+</footer>
+  <div class="h-20 bg-gradient-to-r from-cyan-200 to-blue-600">
+  </div>
+    <script src="./src/script.js"></script>
+</html>
